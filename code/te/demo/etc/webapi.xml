@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<routes xmlns:xsl="http://www.w3.org/2001/XMLSchema-instance" >
+    <route url="/V2/product/getProductsById/:id" method="GET">
+        <service class="te\demo\Api\ProductRepositoryInterface" method="getProductById" />
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V2/product/addProduct" method="POST">
+        <service class="te\demo\Api\ProductRepositoryInterface" method="addProduct" />
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V2/product/updateProduct" method="POST">
+        <service class="te\demo\Api\ProductRepositoryInterface" method="updateProduct" />
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    
+</routes>     
